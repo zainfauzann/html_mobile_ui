@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AzureUI - VIEW RECEIVE NOTE1</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/global.style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="wrapper-inline">
+            <!-- Header area start -->
+            <header style="background-color: #FFF">
+                <a class="go-back-link" href="javascript:history.back();" a><i class="fa fa-arrow-left"></i></a>
+                <h1 id="HT" class="page-title" style="color: #000">Warehouse Receive Note</h1>
+            </header>
+            <!-- Header area end -->
+            <!-- Page content start -->
+            <main class="fix-top-menu">
+                <section class="container">
+                    <form>
+                        <div class="form-divider"></div>
+						<!-- Warehouse Receive Note start -->
+                        <div class="form-label-divider">
+                            <span class="label-span">Item Details</span>
+                        </div>
+                        <div class="form-divider"></div>
+                        <div class="form-row-group with-icons-no-padding">
+                                <div class="form-row no-padding">
+                                        <div class="form-element-title">
+                                            <label style="color: #000">Description</label>
+                                        </div>
+                                        <input type="text" class="form-element" placeholder="Items is goods" required />
+                                </div>
+                
+                            <table style="width:100%">
+                                <tr>
+                                    <td>                                     
+                                        <div class="form-row no-padding">
+                                            <div class="form-element-title">
+                                            <label class="labelright" style="color: #000">Total Carton(Nomjnal)</label>
+                                            <label class="labelleft" style="color: #000">Total Carton(Actual)</label><br>
+                                            <input width="46%" type="text" name="Nominal" class="form-first-name" placeholder="0.00" />&nbsp;
+                                            <input width="46%" type="text" name="Actual" class="form-last-name" placeholder="0.00" />
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>                                     
+                                        <div class="form-row no-padding">
+                                            <div class="form-element-title">
+                                            <label class="labelright" style="color: #000">Measurement(Nominal)</label>
+                                            <label class="labelleft" style="color: #000">Measurement(Actual)</label><br>
+                                            <input width="46%" type="text" name="Nominal" class="form-first-name" placeholder="0.00" />&nbsp;
+                                            <input width="46%" type="text" name="Actual" class="form-last-name" placeholder="0.00" />
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>                                     
+                                        <div class="form-row no-padding">
+                                            <div class="form-element-title">
+                                            <label class="labelright" style="color: #000">Weight(Nominal)</label>
+                                            <label class="labelleft" style="color: #000">Weight(Actual)</label><br>
+                                            <input width="46%" type="text" name="Nominal" class="form-first-name" placeholder="0.00" />&nbsp;
+                                            <input width="46%" type="text" name="Actual" class="form-last-name" placeholder="0.00" />
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Balanced</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="1 carton" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Damages</label>
+                                    </div><br>
+                                    <label><input type="radio" name="gender" /> Yes</label>
+                                    <label class="form-element"><input type="radio" name="gender" /> No</label>
+                                </div>
+            
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Status</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="Matched/Unmatched/Damaged/Matched Damaged/Unmatched Damaged" required />
+                                </div>	
+                                
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Photo</label>
+                                    </div>
+                                    <div class="form-divider"></div>
+                                    <div class="form-row txt-center">
+                                        <div class="profile-image">
+                                            <div class="profile-image-item">
+                                                <img id="CompanyProfile" src="avatar.png" width="210" height="110" />
+                                            </div>
+                                            <div class="form-divider-2"></div>
+                                            <input id="fileInput" type="file" style="display:none;" />
+                                            <button class="button green" onclick="document.getElementById('fileInput').click();">Select Image</button>
+                                            <button class="button red">Remove</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-divider-3"></div>
+                                    <div class="form-divider"></div>
+                                </div>
+                        </div>
+                        <!-- Warehouse Receive Note end -->
+                        <div class="form-divider"></div>
+                        <div class="form-row txt-right">                           
+                            <a href="arrangements-warehouse_receive_note1.1.2.html"><span  class="button blue">Submit</span></a>
+                        </div>
+                        <div class="form-divider"></div>		
+                    </form>
+                </section>
+            </main>
+            <!-- Page content end -->
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/global.script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AzureUI - SEARCH CONTACT</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/global.style.css">
+    <style>
+    </style>
+</head>
+<body>
+
+
+    <!-- Wrapper Content Start Here -->
+    <div class="wrapper">
+
+        <!-- Wrapper Inline Start Here -->
+        <div class="wrapper-inline">
+
+            <div class="search-result-header fix-searchbar">
+                <!-- or without .fix-searchbar -->
+                <form class="fix-searchbar">
+                    <input type="text" id="searchInput" class="form-element" placeholder="search by mobile contact">
+                    <button id="btnback" type="button" class="search-result-btn"><i class="fa fa-arrow-left"></i></button>
+                </form>
+            </div>
+
+            <!-- Page content start -->
+            <main class="fix-top-menu">
+                <form>
+                    <div class="form-divider"></div>
+                    <div class="list-box-non">
+                        <!-- Content List Spawner Start Here -->
+                        <a> &nbsp;New Friends</a>
+                        <div class="list-box" style="margin-left:0">
+                            <div class="list-box-emp">
+                                <a href="#" class="list-item">
+                                    <i class="fa fa-user"></i>
+                                    <em class="seperate-contact"></em>
+                                    <span class="list-item-title-contact">Chua</span>
+                                    <br />
+                                    <span class="list-item-title-contact" style="margin-top:-13px; color: #029900">Izyim Exist</span>
+                                    <span class="list-item-title-role" style="margin-top:-13px">Add</span>
+                                </a>
+                            </div>
+                            <div class="list-box-emp">
+                                <a href="#" class="list-item">
+                                    <i class="fa fa-user" style="color: green"></i>
+                                    <em class="seperate-contact"></em>
+                                    <span class="list-item-title-contact">Bryan</span>
+                                    <br />
+                                    <span class="list-item-title-contact" style="margin-top:-13px; color: #029900">Online</span>
+                                    <span class="list-item-title-role" style="margin-top:-13px">Added</span>
+                                </a>
+                            </div>
+                            <div class="list-box-emp">
+                                <a href="#" class="list-item">
+                                    <i class="fa fa-user" style="color: #000"></i>
+                                    <em class="seperate-contact"></em>
+                                    <span class="list-item-title-contact">John</span>
+                                    <br />
+                                    <span class="list-item-title-contact" style="margin-top:-13px;">012-3124455</span>
+                                    <span class="list-item-title-role" style="margin-top:-13px">Invite</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Content List Spawner End Here -->
+                    </div>
+                </form>
+            </main>
+            <!-- Page content end -->
+
+        </div>
+        <!-- Wrapper Inline End Here -->
+
+    </div>
+    <!-- Wrapper Content End Here -->
+    <!-- Required For All Pages, Otherwise Ugly Others Function Won't Work -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/global.script.js"></script>
+    <!-- Required For All Pages, Otherwise Ugly Others Function Won't Work -->
+
+    <script type="text/javascript">
+        document.getElementById("btnback").onclick = function () {
+            javascript: history.back();
+        };
+    </script>
+</body>
+</html>

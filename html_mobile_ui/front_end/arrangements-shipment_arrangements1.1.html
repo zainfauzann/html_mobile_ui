@@ -1,0 +1,376 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AzureUI - VIEW SHIPMENT ARRANGEMENT1-</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/global.style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="wrapper-inline">
+            <!-- Header area start -->
+            <header style="background-color: #FFF">
+                <a class="go-back-link" href="javascript:history.back();" a><i class="fa fa-arrow-left"></i></a>
+                <h1 id="HT" class="page-title" style="color: #000">Shipment Arrangement</h1>
+            </header>
+            <!-- Header area end -->
+            <!-- Page content start -->
+            <main class="fix-top-menu">
+                <section class="container">
+                    <form>
+                        <div class="form-divider"></div>
+                        <div class="form-label-divider">
+                            <span class="label-span">Shipment Arrangement Details</span>
+                        </div>
+                        <div class="form-divider"></div>
+                        <div class="form-row-group with-icons-no-padding">
+
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Loading Date</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="dd/mm/yyyy" required />
+                                </div>
+            
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Shipment Number</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="KED 1726" required />
+                                </div>
+            
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Departure Port</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="Port Klang" required />
+                                </div>
+            
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Container No</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="MFG3456" required />
+                                </div>
+            
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Type of Container</label>
+                                    </div>
+                                    <select class="form-element">
+                                        <option value="">Please Select Type of Container</option>
+                                        <option value="1">Double Doors Container 20ft</option>
+                                        <option value="2">Double Doors Container 40ft</option>
+                                        <option value="3">Dry Storage Container 10ft</option>
+                                        <option value="4">Dry Storage Container 20ft</option>
+                                        <option value="5">Dry Storage Container 30ft</option>
+                                        <option value="6">Flat Rack Container</option>
+                                        <option value="7">Open Top Container</option>
+                                        <option value="8">Tunnel Container</option>
+                                        <option value="9">Open Side Storage Container</option>                         
+                                        <option value="10">Refregerated ISO Container</option>
+                                        <option value="11">Insulated or Thermal Container</option>
+                                        <option value="12">Tanks </option>
+                                        <option value="13">Cargo Storage Roll Container</option>
+                                        <option value="14">Half Height Container </option>
+                                        <option value="15">Car Container</option>
+                                        <option value="16">Intermediate Bulk Shift Container</option>
+                                        <option value="17">Drums </option>
+                                        <option value="18">Special Purpose Container</option>
+                                        <option value="19">Swap Bodies</option>
+                                    </select>
+                                </div>
+            
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">ETD</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="dd/mm/yyyy" required />
+                                </div>
+            
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">ETA</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="dd/mm/yyyy" required />
+                                </div>
+                            </div>
+                            <!-- Shipment Arrangement Details End Here-->
+                            <!-- Loading Vehicle Details Start Here-->
+                            <div class="form-divider"></div>
+            
+                            <div class="form-label-divider">
+                                <span class="label-span">Loading Vehicle and Driver</span>
+                            </div>
+            
+                            <div class="form-divider"></div>
+                            <div class="form-row-group with-icons-no-padding">
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Driver Name</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="John" required />
+                                </div>
+            
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Driver Contact Number</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="0123456789" required />
+                                </div>
+            
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Trailer Number</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="KED 5353" required />
+                                </div>
+            
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Driver Identification Card Number</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="1234567891011" required />
+                                </div>
+                            </div>
+                            <!-- Loading Vehicle Details End Here-->
+                            <!-- Loading Venue Details Start Here-->
+                            <div class="form-divider"></div>
+                            <div class="form-label-divider">
+                                <span class="label-span">Loading Venue</span>
+                            </div>
+            
+                            <div class="form-divider"></div>
+            
+                            <div class="form-row-group with-icons-no-padding">
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Loading Address</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="" required />
+                                </div>
+            
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Loading City</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="" required />
+                                </div>
+            
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Loading State</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="" required />
+                                </div>
+            
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Contact Number</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="" required />
+                                </div>
+            
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Postcode</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="" disabled required />
+                                </div>
+            
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Country</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="" required />
+                                </div>
+            
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Contact Person</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="" required />
+                                </div>
+            
+                                <div class="form-row no-padding">
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Remark</label>
+                                    </div>
+                                    <input type="text" class="form-element" placeholder="State If Any" required />
+                                </div>
+                            </div>
+                            <div class="form-divider"></div>                            
+                            <!-- Loading Venue Details End Here-->
+                            <!-- Consolidation Start Here-->
+                            <div class="form-divider"></div>
+                            <div style="background-color: #FFF">
+                                    <h1  class="subheader" style="color: #000">Consolidation</h1>
+                            </div>
+                            <div class="form-divider"></div>
+                        
+                            <div class="form-label-divider">
+                                <span class="label-span">Order Selection</span>
+                            </div>
+                            <div class="form-divider"></div>
+            
+                            <div class="search-result-header">
+                                    <!-- or without .fix-searchbar -->
+                                    <form class="fix-searchbar">
+                                        <input type="text" id="searchInput" class="form-element" placeholder="search item no" onkeyup="CSearch()">                      
+                                    </form>
+                            </div>
+                                  <div class="form-divider"></div>
+                                        <div class="form-row-group with-icons-no-padding">
+                                            <div style="color: #069" class="list-box-non">
+                                                <button href="#" class="collapsible ">
+                                                    <i class="fa fa-truck"></i>
+                                                    <span class="list-item-title">Order No : STEAM/00001/00004</span>
+                                                    <input style="float: right" type="checkbox" value="check">
+                                                </button>
+                                                <div class="content">
+                                                    <div class="form-divider"></div>
+                                                    <div class="form-row-group with-icons-no-padding">
+                                                        <div class="form-row no-padding">
+                                                            <div class="form-element-title">
+                                                                <label style="color: #000">ETA</label>
+                                                            </div>
+                                                            <input type="text" class="form-element" placeholder="dd/mm/yyyy" disabled />
+                                                        </div>
+                                                        <div class="form-row no-padding">
+                                                            <div class="form-element-title">
+                                                                <label style="color: #000">Shipment Number</label>
+                                                            </div>
+                                                            <input type="text" class="form-element" placeholder="MFG3456" disabled />
+                                                        </div>
+                                                        <div class="form-row no-padding">
+                                                            <div class="form-element-title">
+                                                                <label style="color: #000">Marking Number</label>
+                                                            </div>
+                                                            <input type="text" class="form-element" placeholder="STEAM/12345/0001/00003" disabled />
+                                                        </div>
+                                                        <div class="form-row no-padding">
+                                                            <div class="form-element-title">
+                                                                <label style="color: #000">Address</label>
+                                                            </div>
+                                                            <input type="text" class="form-element" placeholder="a31,058898 China,Guangzhou, China" disabled />
+                                                        </div>
+                                                        <div class="form-row no-padding">
+                                                            <div class="form-element-title">
+                                                                <label style="color: #000">Address</label>
+                                                            </div>
+                                                            <input type="text" class="form-element" placeholder="CBM : 10648 Weight : 22 Carton Qty : 22" disabled />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-divider"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-row-group with-icons-no-padding">
+                                            <div style="color: #069" class="list-box-non">
+                                                <button href="#" class="collapsible ">
+                                                    <i class="fa fa-truck"></i>
+                                                    <span class="list-item-title">Order No : STEAM/00001/00004</span>
+                                                    <input style="float: right" type="checkbox" value="check">
+                                                </button>
+                                                <div class="content">
+                                                    <div class="form-divider"></div>
+                                                    <div class="form-row-group with-icons-no-padding">
+                                                        <div class="form-row no-padding">
+                                                            <div class="form-element-title">
+                                                                <label style="color: #000">ETA</label>
+                                                            </div>
+                                                            <input type="text" class="form-element" placeholder="dd/mm/yyyy" disabled />
+                                                        </div>
+                                                        <div class="form-row no-padding">
+                                                            <div class="form-element-title">
+                                                                <label style="color: #000">Shipment Number</label>
+                                                            </div>
+                                                            <input type="text" class="form-element" placeholder="MFG3456" disabled />
+                                                        </div>
+                                                        <div class="form-row no-padding">
+                                                            <div class="form-element-title">
+                                                                <label style="color: #000">Marking Number</label>
+                                                            </div>
+                                                            <input type="text" class="form-element" placeholder="STEAM/12345/0001/00003" disabled />
+                                                        </div>
+                                                        <div class="form-row no-padding">
+                                                            <div class="form-element-title">
+                                                                <label style="color: #000">Address</label>
+                                                            </div>
+                                                            <input type="text" class="form-element" placeholder="a31,058898 China,Guangzhou, China" disabled />
+                                                        </div>
+                                                        <div class="form-row no-padding">
+                                                            <div class="form-element-title">
+                                                                <label style="color: #000">Address</label>
+                                                            </div>
+                                                            <input type="text" class="form-element" placeholder="CBM : 10648 Weight : 22 Carton Qty : 22" disabled />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-divider"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                      
+                            <!-- Pagination Start Here-->
+                            <div class="form-divider"></div>
+                            <div style="text-align: center">
+                            <div class="pagination">
+                                <a href="#">&laquo;</a>
+                                <a class="active" href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">&raquo;</a>
+                              </div>
+                            </div>
+                            <div class="form-divider"></div>
+                            <!-- Pagination End Here--> 
+            
+                            <!-- Consolidation End Here-->							             									           
+                    <!-- note end content end -->
+                        <div class="form-row txt-center"> 
+                            <div class="form-divider"></div>
+                            <a href="#"><span class="button grey"  data-dismiss="false" disabled>Custom Examination</span></a>
+                            <a href="arrangements-shipment_arrangements2.html"><span class="button blue" data-dismiss="false">Submit</span></a>
+                        </div>
+                        <div class="form-divider"></div>
+                    </form>
+                </section>
+            </main>
+            <!-- Page content end -->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        /* =========================================
+        [Collapsible for Custom Order Select] Start Here
+        ==========================================*/
+    
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+    
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() 
+        {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+        }
+    </script>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/global.script.js"></script>
+
+
+</body>
+
+</html>

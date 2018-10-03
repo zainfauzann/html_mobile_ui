@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AzureUI - CREATE SHIPPING ORDER STEP 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/global.style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="wrapper-inline">
+            <!-- Header area start -->
+            <header style="background-color: #FFF">
+                <a class="go-back-link" href="javascript:history.back();"><i class="fa fa-arrow-left"></i></a>
+                <h1 id="HT" class="page-title" style="color: #000">Add Item</h1>
+            </header>
+            <!-- Header area end -->
+            <!-- Page content start -->
+            <main class="fix-top-menu">
+                <section class="container">
+                    <form>
+                        <div class="form-divider"></div>
+
+                        <div class="form-label-divider">
+                            <span class="label-span">Item Details</span>
+                        </div>
+
+                        <div class="form-divider"></div>
+
+                        <div class="form-row-group with-icons-no-padding">
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Description</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="42 inch" required />
+                            </div>
+
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Brand</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Sharp" required />
+                            </div>
+
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Model</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Model" required />
+                            </div>
+
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Item Code</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Item Code" required />
+                            </div>
+
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Quantity</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Quantity" required />
+                            </div>
+
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">UOM</label>
+                                </div>
+                                <select class="form-element">
+                                    <option value="">Please select UOM for your item</option>
+                                    <option value="1">Bag</option>
+                                    <option value="2">Bucket</option>
+                                    <option value="3">Bundle</option>
+                                    <option value="4">Box</option>
+                                    <option value="5">Piece</option>
+                                    <option value="6">Gallon</option>
+                                    <option value="7">Pack</option>
+                                    <option value="8">Pair</option>
+                                    <option value="9">Sheet</option>
+                                    <option value="10">Rack</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Photo</label>
+                                </div>
+                                <div class="form-divider"></div>
+                                <div class="form-row txt-center">
+                                    <div class="profile-image">
+                                        <div class="profile-image-item">
+                                            <img id="CompanyProfile" src="avatar.png" width="210" height="110" />
+                                        </div>
+
+                                        <div class="form-divider-2"></div>
+                                        <input id="fileInput" type="file" style="display:none;" />
+                                        <button class="button green" onclick="document.getElementById('fileInput').click();">Select Image</button>
+                                        <button class="button red">Remove</button>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-divider-3"></div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Packing Start Here -->
+                        <div class="form-divider"></div>
+
+                        <div class="form-label-divider">
+                            <span class="label-span">Packing</span>
+                        </div>
+
+                        <div class="form-divider"></div>
+
+                        <div class="form-row-group with-icons-no-padding">
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Qty of Carton</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="42 inch" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Packaging Type</label>
+                                </div>
+                                <select class="form-element">
+                                    <option value="">Please select choose Packaging Type</option>
+                                    <option value="1">Bag</option>
+                                    <option value="2">Bucket</option>
+                                    <option value="3">Bundle</option>
+                                    <option value="4">Box</option>
+                                    <option value="5">Piece</option>
+                                    <option value="6">Gallon</option>
+                                    <option value="7">Pack</option>
+                                    <option value="8">Pair</option>
+                                    <option value="9">Sheet</option>
+                                    <option value="10">Rack</option>
+                                </select>
+
+                                <div class="form-row no-padding">
+
+                                    <div class="form-element-title">
+                                        <label style="color: #000">Photo</label>
+                                    </div>
+
+                                    <div class="form-divider"></div>
+
+                                    <div class="form-row txt-center">
+                                        <div class="profile-image">
+                                            <div class="profile-image-item">
+                                                <img id="CompanyProfile" src="avatar.png" width="210" height="110" />
+                                            </div>
+
+                                            <div class="form-divider-2"></div>
+                                            <input id="fileInput" type="file" style="display:none;" />
+                                            <button class="button green" onclick="document.getElementById('fileInput').click();">Select Image</button>
+                                            <button class="button red">Remove</button>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-divider-3"></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Packing End Here -->
+
+                        <div class="form-divider"></div>
+
+                        <div class="form-label-divider">
+                            <span class="label-span">Measurement</span>
+                        </div>
+
+                        <div class="form-divider"></div>
+
+                        <!-- Measurement Start Here-->
+                        <div class="form-row no-padding">
+                            <div class="form-element-title">
+                                <label style="color: #000">Height (m)</label>
+                            </div>
+                            <input type="text" class="form-element" placeholder="0" required />
+                        </div>
+
+                        <div class="form-row no-padding">
+                            <div class="form-element-title">
+                                <label style="color: #000">Width (m)</label>
+                            </div>
+                            <input type="text" class="form-element" placeholder="20" required />
+                        </div>
+
+                        <div class="form-row no-padding">
+                            <div class="form-element-title">
+                                <label style="color: #000">Depth (m)</label>
+                            </div>
+                            <input type="text" class="form-element" placeholder="15" required />
+                        </div>
+
+                        <div class="form-divider"></div>
+                        <div class="form-row txt-center">
+                            <button class="button red">Delete Item</button>
+                            <button class="button blue">Update Item</button>
+                        </div>
+
+                    </form>
+                </section>
+
+            </main>
+            <!-- Page content end -->
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/global.script.js"></script>
+
+
+</body>
+
+</html>

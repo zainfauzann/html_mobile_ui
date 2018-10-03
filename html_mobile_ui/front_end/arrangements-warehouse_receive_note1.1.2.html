@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AzureUI - WAREHOUSE RECEIVE NOTE</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/global.style.css">
+</head>
+
+<body>
+
+    <div class="nav-menu">
+
+        <nav class="menu">
+            <!-- profile logo start -->
+            <div class="nav-header">
+                <a href="home.html"><img src="images/CIEF.png" width="160"></a>
+            </div>
+            <!-- profile logo end -->
+            <!-- Menu navigation start -->
+            <div class="nav-container">
+                <ul class="main-menu">
+                    <li>
+                        <a href="home.html"><i class="fa fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bell"></i> Notice</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-briefcase"></i> Arrangement <span class="fa fa-angle-down"></span></a>
+                        <ul>
+                            <li><a href="arrangements-warehouse_receive_note1.html" data-loader="show"><i class="fa fa-industry"></i> Warehouse Receive Note</a></li>
+                            <li><a href="arrangements-shipment_arrangements1.html" data-loader="show"><i class="fa fa-ship"></i> Shipment Arrangement</a></li>
+                            <li><a href="arrangements-delivery_arrangements1.html" data-loader="show"><i class="fa fa-truck"></i> Delivery Arrangement</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i> Orders <span class="fa fa-angle-down"></span></a>
+                        <ul>
+                            <li><a href="shipping-order.html" data-loader="show"><i class="fa fa-truck"></i> Shipping Order</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-comments"></i> Messenger</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i> Track Order</a>
+                    </li>
+                    <li>
+                        <a href="example-element.html"><i class="fa fa-code"></i>Example Element <span class="fa fa-angle-down"></span></a>
+                        <ul>
+                            <li><a href="element-wizard.html" data-loader="show"><i class="fa fa-code"></i> Wizard Element</a></li>
+                            <li><a href="#" data-loader="show"><i class="fa fa-code"></i> Accordion Element</a></li>
+                            <li><a href="#" data-loader="show"><i class="fa fa-code"></i> Popup Element</a></li>
+                            <li><a href="element-MTracker.html" data-loader="show"><i class="fa fa-code"></i> Meter Tracker Element</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Menu navigation end -->
+        </nav>
+    </div>
+
+    <div class="wrapper">
+        <div class="wrapper-inline">
+            <!-- Header area start -->
+            <header style="background-color: #FFF">
+                <a class="go-back-link" href="javascript:history.back();"><i class="fa fa-arrow-left"></i></a>
+                <h1 id="HT" class="page-title" style="color: #000">Warehouse Receive Note</h1>
+                <div class="navi-menu-button">
+                    <em></em>
+                    <em></em>
+                    <em></em>
+                </div>
+            </header>
+            <!-- Header area end -->
+            <!-- Page content start -->
+            <main class="fix-top-menu">
+                <form>            
+                        <div class="form-divider"></div>
+                        <div class="form-label-divider">
+                                <span class="label-span">List of Items</span>
+                        </div>   
+                        <!-- Content List Spawner Start Here -->
+                        <div class="form-divider"></div>
+                        <div class="list-box-emp">
+                            <a href="arrangements-warehouse_receive_note1.2.html" class="list-item">
+                                <i class="fa fa-file"></i>
+                                <em class="seperate"></em>
+                                <span class="list-item-title">Item 1</span>
+                                <span style="color: #FF0000; font-size: 16px" class="list-item-title-edit">Edit</span>
+                            </a>
+                        </div>
+                        <div class="list-box-emp">
+                            <a href="arrangements-warehouse_receive_note1.2.html" class="list-item">
+                                <i class="fa fa-file"></i>
+                                <em class="seperate"></em>
+                                <span class="list-item-title">Item 2</span>
+                                <span style="color: #FF0000; font-size: 16px" class="list-item-title-edit">Edit</span>
+                            </a>
+                        </div>
+                        <div class="form-divider"></div>
+                        <div class="form-row txt-center">
+                           Do you want to add more item?
+                        </div>
+                        <div class="form-divider"></div>
+                        <div class="list-box-emp">
+                            <a href="arrangements-warehouse_receive_note1.2.html" class="list-item">
+                                <i class="fa fa-plus"></i>
+                                <em class="seperate"></em>
+                                <span class="list-item-title">Add New Item</span>
+                            </a>
+                        </div>
+                        <div class="form-divider"></div>
+                        <div class="form-row txt-center">
+                            <a data-popup="formPopup1" class="button red">Reject</a>
+                            <a data-popup="formPopup" class="button green">Decision Request</a>
+                            <a href="arrangements-warehouse_receive_note11.1.html" class="button blue">Back</a>
+                            <a href="arrangements-warehouse_receive_note2.html" class="button blue">Finish</a>
+                        </div>
+                        <div class="form-divider"></div>
+                        <!-- Content List Spawner End Here -->    
+                </form>
+            </main>
+        </div>
+    </div>
+         <!-- Page content end -->
+          <!--Decision POPUP HTML CONTENT START -->
+    <div class="popup-overlay" id="formPopup1">
+        <!-- if you dont want overlay add class .no-overlay -->
+        <div class="popup-container">
+            <div class="popup-header">
+                <h3 class="popup-title">Reject</h3>
+                <span class="popup-close" data-dismiss="true"><i class="fa fa-times"></i></span>
+            </div>
+            <div class="popup-content">
+                <div class="form-divider"></div>
+                <div class="form-label-divider">
+                    <span class="label-span">Reject Details</span>
+                </div>
+                <div class="form-divider"></div>
+                <div class="form-row-group with-icons-no-padding">                         
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Description</label>
+                        </div>
+                        <textarea rows="4" cols="50" class="form-element" placeholder="Write your description here" required ></textarea>
+                    </div>					
+                </div>           
+                </div>         
+            <div class="popup-footer">
+                <div class="form-divider"></div>
+                <a href="arrangements-warehouse_receive_note1.1.2.html"><span class="button blue" data-dismiss="true">Submit</span></a>
+            </div>
+            <div class="form-divider"></div>
+        </div>
+    </div>
+    <!--Decision POPUP HTML CONTENT END -->
+         <!--Decision POPUP HTML CONTENT START -->
+    <div class="popup-overlay" id="formPopup">
+        <!-- if you dont want overlay add class .no-overlay -->
+        <div class="popup-container">
+            <div class="popup-header">
+                <h3 class="popup-title">Decision Request</h3>
+                <span class="popup-close" data-dismiss="true"><i class="fa fa-times"></i></span>
+            </div>
+            <div class="popup-content">
+                <div class="form-divider"></div>
+                <div class="form-label-divider">
+                    <span class="label-span">Decision Request Details</span>
+                </div>
+                <div class="form-divider"></div>
+                <div class="form-row-group with-icons-no-padding">
+                        <table style="width:100%">
+                                <tr>
+                                    <td>                                     
+                                        <div class="form-row no-padding">
+                                            <div class="form-element-title">
+                                            <label class="labelleft" style="color: #000">Item 1</label><br>
+                                            
+                                            <input width="46%" type="text" name="Nominal" class="form-first-name" placeholder="Damaged" />&nbsp;
+                                            <input width="46%" type="text" name="Actual" class="form-last-name" placeholder="1 ctn" />
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>                                     
+                                        <div class="form-row no-padding">
+                                            <div class="form-element-title">
+                                            <label class="labelleft" style="color: #000">Item 2</label><br>
+                                            
+                                            <input width="46%" type="text" name="Nominal" class="form-first-name" placeholder="Short" />&nbsp;
+                                            <input width="46%" type="text" name="Actual" class="form-last-name" placeholder="2 ctn" />
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>                                     
+                                        <div class="form-row no-padding">
+                                            <div class="form-element-title">
+                                            <label class="labelleft"style="color: #000">Item 3</label><br>
+                                           
+                                            <input width="46%" type="text" name="Nominal" class="form-first-name" placeholder="Open" />&nbsp;
+                                            <input width="46%" type="text" name="Actual" class="form-last-name" placeholder="Balance(CTN)" />
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>                   
+            
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Description</label>
+                        </div>
+                        <textarea rows="4" cols="50" class="form-element" placeholder="Write your description here" required ></textarea>
+                    </div>					
+                </div>           
+                </div>         
+            <div class="popup-footer">
+                <div class="form-divider"></div>
+                <a href="arrangements-warehouse_receive_note1.1.2.html"><span class="button blue" data-dismiss="true">Submit</span></a>
+            </div>
+            <div class="form-divider"></div>
+        </div>
+    </div>
+    <!--Decision POPUP HTML CONTENT END -->
+    
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/global.script.js"></script>
+
+
+</body>
+
+</html>

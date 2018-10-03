@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AzureUI - SEARCH CONTACT</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/global.style.css">
+    <style>
+    </style>
+</head>
+<body>
+
+
+    <!-- Wrapper Content Start Here -->
+    <div class="wrapper">
+
+        <!-- Wrapper Inline Start Here -->
+        <div class="wrapper-inline">
+
+            <div class="search-result-header fix-searchbar">
+                <!-- or without .fix-searchbar -->
+                <form class="fix-searchbar">
+                    <input type="text" id="searchInput" class="form-element" placeholder="search by company/phone no/name" onkeyup="CSearch()">
+                    <button id="btnback" type="button" class="search-result-btn"><i class="fa fa-arrow-left"></i></button>
+                </form>
+            </div>
+
+            <!-- Page Content Start Here -->
+            <main class="fix-top-menu">
+                <section class="container">
+
+                    <!-- Navigation Body Start Here -->
+                    <div class="cont-menu">
+
+                        <!-- Navigation Menu Start Here -->
+                        <cont class="menu">
+                            <div class="form-divider"></div>
+                            <a>&nbsp; Add New Friend</a>
+                            <div class="list-box-emp">
+                                <a href="#" class="list-item">
+                                    <i class="fa fa-user"></i>
+                                    <em class="seperate-contact"></em>
+                                    <span class="list-item-title-contact">Chua</span>
+                                    <br />
+                                    <span class="list-item-title-contact" style="margin-top:-13px; color: #029900">Izyim Exist</span>
+                                    <span class="list-item-title-role" style="margin-top:-13px; float: right">Add</span>
+                                </a>
+                            </div>
+                            <div class="list-box-emp">
+                                <a href="#" class="list-item">
+                                    <i class="fa fa-user" style="color: #000"></i>
+                                    <em class="seperate-contact"></em>
+                                    <span class="list-item-title-contact">John</span>
+                                    <br />
+                                    <span class="list-item-title-contact" style="margin-top:-13px;">012-3124455</span>
+                                    <span class="list-item-title-role" style="margin-top:-13px; float: right">Invite</span>
+                                </a>
+                            </div>
+                            <!-- Menu navigation start -->
+                            <div class="cont-container">
+                                <ul id="AddCompany" class="main-menu" style="display: none; background-color: #FFF">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user"></i>
+                                            Fedrick Darel Auditore
+                                            <span class="list-item-title-role" style="margin-top:-10px">0197951905</span>
+                                            <br />
+                                            <span class="list-item-title-role" style="margin-top:-10px">Azure Corp</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user"></i>
+                                            Alexander
+                                            <span class="list-item-title-role" style="margin-top:-10px">0197518811</span>
+                                            <br />
+                                            <span class="list-item-title-role" style="margin-top:-10px">Roma Inc</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user"></i>
+                                            Rovio Dough
+                                            <span class="list-item-title-role" style="margin-top:-10px">0193319013</span>
+                                            <br />
+                                            <span class="list-item-title-role" style="margin-top:-10px">Rovio Games</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user"></i>
+                                            Mark
+                                            <span class="list-item-title-role" style="margin-top:-10px">0127953102</span>
+                                            <br />
+                                            <span class="list-item-title-role" style="margin-top:-10px">Facebook</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user"></i>
+                                            Bruce Wayne
+                                            <span class="list-item-title-role" style="margin-top:-10px">0131131521</span>
+                                            <br />
+                                            <span class="list-item-title-role" style="margin-top:-10px">Wayne Enterprise</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user"></i>
+                                            Daniel Jake
+                                            <span class="list-item-title-role" style="margin-top:-10px">0127224135</span>
+                                            <br />
+                                            <span class="list-item-title-role" style="margin-top:-10px">Daniel Inc</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user"></i>
+                                            Harry
+                                            <span class="list-item-title-role" style="margin-top:-10px">0163124451</span>
+                                            <br />
+                                            <span class="list-item-title-role" style="margin-top:-10px">CIEF</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user"></i>
+                                            Kiah Wang Auditore
+                                            <span class="list-item-title-role" style="margin-top:-10px">0117951905</span>
+                                            <br />
+                                            <span class="list-item-title-role" style="margin-top:-10px">Land Estate Inc</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user"></i>
+                                            Spongebob
+                                            <span class="list-item-title-role" style="margin-top:-10px">0161233255</span>
+                                            <br />
+                                            <span class="list-item-title-role" style="margin-top:-10px">Karate Corp</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user"></i>
+                                            Zack Synder
+                                            <span class="list-item-title-role" style="margin-top:-10px">0122451105</span>
+                                            <br />
+                                            <span class="list-item-title-role" style="margin-top:-10px">DC Entertainment</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user"></i>
+                                            Alice Wong Auditore
+                                            <span class="list-item-title-role" style="margin-top:-10px">0167951155</span>
+                                            <br />
+                                            <span class="list-item-title-role" style="margin-top:-10px">Alliance Estate</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user"></i>
+                                            Violet Auditore Firenze
+                                            <span class="list-item-title-role" style="margin-top:-10px">0122311975</span>
+                                            <br />
+                                            <span class="list-item-title-role" style="margin-top:-10px">MC Muzic Inc</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user"></i>
+                                            Jack Ma
+                                            <span class="list-item-title-role" style="margin-top:-10px">0127611005</span>
+                                            <br />
+                                            <span class="list-item-title-role" style="margin-top:-10px">Alibaba Express</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="form-divider"></div>
+                            </div>
+                            <!-- Menu navigation end -->
+
+                        </cont>
+                        <!-- Navigation Menu End Here-->
+
+                    </div>
+                    <!-- Navigation Body Start Here -->
+
+                </section>
+            </main>
+            <!-- Page Content End Here -->
+
+        </div>
+        <!-- Wrapper Inline End Here -->
+
+    </div>
+    <!-- Wrapper Content End Here -->
+    <!-- Required For All Pages, Otherwise Ugly Others Function Won't Work -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/global.script.js"></script>
+    <!-- Required For All Pages, Otherwise Ugly Others Function Won't Work -->
+
+    <script type="text/javascript">
+        function CSearch() {
+            // Declare variables
+            var input, filter, ul, li, a, i;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("AddCompany");
+            li = ul.getElementsByTagName('li');
+            if (input.value.length == 0) {
+                ul.style.display = "none";
+            } else {
+                ul.style.display = "block";
+            }
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "block";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        document.getElementById("btnback").onclick = function () {
+            javascript: history.back();
+        };
+    </script>
+</body>
+</html>

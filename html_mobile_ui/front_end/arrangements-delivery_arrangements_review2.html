@@ -1,0 +1,446 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AzureUI - VIEW SHIPMENT ARRANGEMENT2-ARRANGEMENT DETAILS</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/global.style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="wrapper-inline">
+            <!-- Header area start -->
+            <header style="background-color: #FFF">
+                <a class="go-back-link" href="javascript:history.back();" a><i class="fa fa-arrow-left"></i></a>
+                <h1 id="HT" class="page-title" style="color: #000">Order Details</h1>
+            </header>
+            <!-- Header area end -->
+            <!-- Page content start -->
+            <main class="fix-top-menu">
+                <section class="container">                   
+                        <div class="form-divider"></div>
+                        <div class="form-label-divider">
+                            <span class="label-span">Order : 00003</span>
+                        </div>
+                        <div class="form-divider"></div>
+								<!-- Tab links -->
+								<div class="tab">
+									<button class="tablinks" onclick="openDelivery(event, 'Shipping Order')">Shipping Order</button>
+									<button class="tablinks" onclick="openDelivery(event, 'Arrangements')" id="defaultOpen">Arrangements</button>							
+								</div>
+								<!-- Tab content -->
+			<div id="Shipping Order" style="color: #000" class="tabcontent">
+				<form>
+                        <div class="form-divider"></div>
+						<!-- Order Details start -->
+                        <div class="form-label-divider">
+                            <span class="label-span">Order Details</span>
+                        </div>
+
+                        <div class="form-divider"></div>
+
+                        <div class="form-row-group with-icons-no-padding">
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Order Number</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="00003" disabled />
+                            </div>
+
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Marking </label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="STEAM/12345/0001" disabled/>
+                            </div>
+
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Supplier Name</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Mamee" disabled />
+                            </div>
+
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Supplier Contact Person</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Puck" disabled />
+                            </div>
+
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Supplier Contact Person Number</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="0123456789" disabled/>
+                            </div>														                          							
+                        </div>
+                    <!-- Order Details end -->
+					<!-- Warehouse Details start -->
+                      <div class="form-divider"></div>
+							<div class="form-label-divider">
+								<span class="label-span">Warehouse Details</span>
+							</div>  
+						 <div class="form-divider"></div>
+						<div class="form-row-group with-icons-no-padding">
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Name</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Gudang Udang" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Address</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="123" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">City</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Klang" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Postcode</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="123456" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">State</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Selangor" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Country</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Malaysia" disabled />
+                            </div>
+							
+						</div>
+							<!-- Warehouse Details end -->
+							<!-- Delivery Details start -->
+						<div class="form-divider"></div>
+							<div class="form-label-divider">
+								<span class="label-span">Delivery Details</span>
+							</div>  
+						 <div class="form-divider"></div>
+						<div class="form-row-group with-icons-no-padding">
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Delivery Type</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="2018-03-08" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Name</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="TV" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Address</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="123" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Postcode</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="056789" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">State</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Kedah" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Country</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Malaysia" disabled />
+                            </div>
+							
+						</div>
+						<!-- Delivery Details end -->
+						<!-- Packaging List start -->
+						<div class="form-divider"></div>
+							<div class="form-label-divider">
+								<span class="label-span">Packaging List</span>
+							</div>  
+						 <div class="form-divider"></div>
+						<div class="form-row-group with-icons-no-padding">
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Number</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="1" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Description</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="42" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Model</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Bravia" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Quantity</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="22" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">UOM</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Kedah" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">CBM</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Height : 22.00" disabled />
+								<input type="text" class="form-element" placeholder="Width : 22.00" disabled />
+								<input type="text" class="form-element" placeholder="Depth : 22.00" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Weight</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Gross : 22.00" disabled />
+								<input type="text" class="form-element" placeholder="Nett : 22.00" disabled />						
+                            </div>
+							<div class="form-row no-padding">
+								<div class="form-element-title">
+								<label style="color: #000">Photo</label>
+							</div>
+							<div class="form-divider"></div>
+							<div class="form-row txt-center">
+                            <div class="profile-image">
+                                <div class="profile-image-item">
+                                    <img id="CompanyProfile" src="avatar.png" width="210" height="110" />
+                                </div>
+                                <div class="form-divider-2"></div>
+                                <input id="fileInput" type="file" style="display:none;" />                             
+                            </div>
+							</div>
+							<div class="form-divider"></div>
+							</div>
+						</div>
+               </form>
+			</div>
+			
+		<div id="Arrangements" style="color: #000" class="tabcontent">
+			<form>
+                        <div class="form-divider"></div>
+						<!-- Warehouse Arrangement end -->
+                        <div class="form-label-divider">
+                            <span class="label-span">Warehouse Arrangements</span>
+                        </div>
+
+                        <div class="form-divider"></div>
+
+                        <div class="form-row-group with-icons-no-padding">
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Number</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="1" disabled />
+                            </div>
+
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Product Description</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Drugs" disabled/>
+                            </div>
+
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Total Ctn (Nominal)</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="22" disabled />
+                            </div>
+
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Measurement (Nominal)</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="22.00" disabled />
+                            </div>
+
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Weight (Nominal)</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="22.00" disabled/>
+                            </div>
+							
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Total Ctn (Actual)</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="22" disabled />
+                            </div>
+							
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">CBM (Actual)</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="22" disabled />
+                            </div>
+							
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Weight (Actual)</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="10648.00" disabled />
+                            </div>
+							
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Status</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Matched" disabled />
+                            </div> 
+							<div class="form-row no-padding">
+								<div class="form-element-title">
+								<label style="color: #000">Photo</label>
+							</div>
+							<div class="form-divider"></div>
+							<div class="form-row txt-center">
+                            <div class="profile-image">
+                                <div class="profile-image-item">
+                                    <img id="CompanyProfile" src="avatar.png" width="210" height="110" />
+                                </div>
+                                <div class="form-divider-2"></div>
+                                <input id="fileInput" type="file" style="display:none;" />                             
+                            </div>
+							</div>
+							<div class="form-divider"></div>
+							</div>                           							
+                        </div>
+                    <!-- Warehouse Arrangement end -->
+					<!-- Shipment Arrangement start -->
+                      <div class="form-divider"></div>
+							<div class="form-label-divider">
+								<span class="label-span">Shipment Arrangement</span>
+							</div>  
+						 <div class="form-divider"></div>
+						<div class="form-row-group with-icons-no-padding">
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">ETD</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="2018-03-05" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">ETA</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="2018-03-05" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Release Date</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="2018-03-05" disabled />
+                            </div>
+							
+						</div>
+							<!-- Shipment Arrangement end -->
+							<!-- Delivery Arrangement start -->
+						<div class="form-divider"></div>
+							<div class="form-label-divider">
+								<span class="label-span">Delivery Arrangement</span>
+							</div>  
+						 <div class="form-divider"></div>
+						<div class="form-row-group with-icons-no-padding">
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Delivery Type</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="2018-03-08" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Delivery Date</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="2018-03-05" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Driver Name</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Abu" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Driver Contact</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="0145567484" disabled />
+                            </div>
+							<div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Vehicle No</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="MFG4567" disabled />
+                            </div>
+							
+						</div>
+						<!-- Delivery Arrangement end -->
+            </form>
+		</div>             
+			<div class="form-divider"></div>
+    			<!-- Shipment Arrangement Details End Here-->                 
+                </section>
+            </main>           
+        </div>
+    </div>
+     <!-- Page content end -->
+	    <script type="text/javascript">
+  /*=========================================
+	[Tab for Delivery and Custom Arrangement] Start Here
+	==========================================*/
+
+	function openDelivery(evt, tabName) {
+	
+    var i, tabcontent, tablinks;
+	// Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+	// Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+	 // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";		
+	}
+	// Get the element with id="defaultOpen" and click on it. This to make the page open the default page
+	document.getElementById("defaultOpen").click();
+    </script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/global.script.js"></script>
+
+
+</body>
+
+</html>

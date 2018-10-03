@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AzureUI - CREATE SHIPPING ORDER STEP 2</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/global.style.css">
+</head>
+
+<body>
+
+    <div class="nav-menu">
+
+        <nav class="menu">
+            <!-- profile logo start -->
+            <div class="nav-header">
+                <a href="home.html"><img src="images/CIEF.png" width="160"></a>
+            </div>
+            <!-- profile logo end -->
+            <!-- Menu navigation start -->
+            <div class="nav-container">
+                <ul class="main-menu">
+                    <li>
+                        <a href="home.html"><i class="fa fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bell"></i> Notice</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-briefcase"></i> Arrangement <span class="fa fa-angle-down"></span></a>
+                        <ul>
+                            <li><a href="#" data-loader="show"><i class="fa fa-industry"></i> Warehouse Receive Note</a></li>
+                            <li><a href="#" data-loader="show"><i class="fa fa-ship"></i> Shipment Arrangement</a></li>
+                            <li><a href="#" data-loader="show"><i class="fa fa-truck"></i> Delivery Arrangement</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i> Orders <span class="fa fa-angle-down"></span></a>
+                        <ul>
+                            <li><a href="shipping-order.html" data-loader="show"><i class="fa fa-truck"></i> Shipping Order</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-comments"></i> Messenger</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i> Track Order</a>
+                    </li>
+                    <li>
+                        <a href="example-element.html"><i class="fa fa-code"></i>Example Element <span class="fa fa-angle-down"></span></a>
+                        <ul>
+                            <li><a href="element-wizard.html" data-loader="show"><i class="fa fa-code"></i> Wizard Element</a></li>
+                            <li><a href="#" data-loader="show"><i class="fa fa-code"></i> Accordion Element</a></li>
+                            <li><a href="#" data-loader="show"><i class="fa fa-code"></i> Popup Element</a></li>
+                            <li><a href="element-MTracker.html" data-loader="show"><i class="fa fa-code"></i> Meter Tracker Element</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Menu navigation end -->
+
+        </nav>
+
+    </div>
+
+    <div class="wrapper">
+        <div class="wrapper-inline">
+            <!-- Header area start -->
+            <header style="background-color: #FFF">
+                <a class="go-back-link" href="javascript:history.back();"><i class="fa fa-arrow-left"></i></a>
+                <h1 id="HT" class="page-title" style="color: #000">Create Shipping Order</h1>
+                <div class="navi-menu-button">
+                    <em></em>
+                    <em></em>
+                    <em></em>
+                </div>
+            </header>
+            <!-- Header area end -->
+
+            <!-- Page content start -->
+            <main class="fix-top-menu">
+                <form>
+                    <div class="form-divider"></div>
+                    <div class="list-box-non">
+                        <a href="javascript:void(0);" class="list-item" data-popup="formPopup">
+                            <i class="fa fa-shopping-cart"></i>
+                            <em class="seperate"></em>
+                            <span class="list-item-title">Add Item</span>
+                        </a>
+
+                        <!-- Content List Spawner Start Here -->
+                        <div class="form-divider"></div>
+
+                        <div class="list-box-emp">
+                            <a href="shipping-item-review.html" class="list-item">
+                                <i class="fa fa-shopping-cart"></i>
+                                <em class="seperate"></em>
+                                <span class="list-item-title"> Item 1</span>
+                            </a>
+                        </div>
+                        <div class="list-box-emp">
+                            <a href="shipping-item-review.html" class="list-item">
+                                <i class="fa fa-shopping-cart"></i>
+                                <em class="seperate"></em>
+                                <span class="list-item-title"> Item 2</span>
+                            </a>
+                        </div>
+
+                        <!-- Content List Spawner End Here -->
+                        <div class="form-divider"></div>
+
+                        <div class="form-row txt-center">
+                            <button class="button red">Back</button>
+                            <button class="button blue">Finish</button>
+                        </div>
+
+                        <!-- Content List Spawner End Here -->
+
+                    </div>
+                </form>
+            </main>
+            <!-- Page content end -->
+        </div>
+    </div>
+
+    <!--POPUP HTML CONTENT START -->
+    <div class="popup-overlay" id="formPopup">
+        <!-- if you dont want overlay add class .no-overlay -->
+        <div class="popup-container">
+            <div class="popup-header">
+                <h3 class="popup-title">Add Item</h3>
+                <span class="popup-close" data-dismiss="true"><i class="fa fa-times"></i></span>
+            </div>
+            <div class="popup-content">
+
+                <div class="form-divider"></div>
+
+                <div class="form-label-divider">
+                    <span class="label-span">Item Details</span>
+                </div>
+
+                <div class="form-divider"></div>
+
+                <div class="form-row-group with-icons-no-padding">
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Description</label>
+                        </div>
+                        <input type="text" class="form-element" placeholder="42 inch" required />
+                    </div>
+
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Brand</label>
+                        </div>
+                        <input type="text" class="form-element" placeholder="Sharp" required />
+                    </div>
+
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Model</label>
+                        </div>
+                        <input type="text" class="form-element" placeholder="Model" required />
+                    </div>
+
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Item Code</label>
+                        </div>
+                        <input type="text" class="form-element" placeholder="Item Code" required />
+                    </div>
+
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Quantity</label>
+                        </div>
+                        <input type="text" class="form-element" placeholder="Quantity" required />
+                    </div>
+
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">UOM</label>
+                        </div>
+                        <select class="form-element">
+                            <option value="">Please select UOM for your item</option>
+                            <option value="1">Bag</option>
+                            <option value="2">Bucket</option>
+                            <option value="3">Bundle</option>
+                            <option value="4">Box</option>
+                            <option value="5">Piece</option>
+                            <option value="6">Gallon</option>
+                            <option value="7">Pack</option>
+                            <option value="8">Pair</option>
+                            <option value="9">Sheet</option>
+                            <option value="10">Rack</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Photo</label>
+                        </div>
+                        <div class="form-divider"></div>
+                        <div class="form-row txt-center">
+                            <div class="profile-image">
+                                <div class="profile-image-item">
+                                    <img id="CompanyProfile" src="avatar.png" width="210" height="110" />
+                                </div>
+
+                                <div class="form-divider-2"></div>
+                                <input id="fileInput" type="file" style="display:none;" />
+                                <button class="button green" onclick="document.getElementById('fileInput').click();">Select Image</button>
+                                <button class="button red">Remove</button>
+
+                            </div>
+                        </div>
+
+                        <div class="form-divider-3"></div>
+
+                    </div>
+
+                </div>
+
+                <!-- Packing Start Here -->
+                <div class="form-divider"></div>
+
+                <div class="form-label-divider">
+                    <span class="label-span">Packing</span>
+                </div>
+
+                <div class="form-divider"></div>
+
+                <div class="form-row-group with-icons-no-padding">
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Qty of Carton</label>
+                        </div>
+                        <input type="text" class="form-element" placeholder="42 inch" required />
+                    </div>
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Packaging Type</label>
+                        </div>
+                        <select class="form-element">
+                            <option value="">Please select choose Packaging Type</option>
+                            <option value="1">Bag</option>
+                            <option value="2">Bucket</option>
+                            <option value="3">Bundle</option>
+                            <option value="4">Box</option>
+                            <option value="5">Piece</option>
+                            <option value="6">Gallon</option>
+                            <option value="7">Pack</option>
+                            <option value="8">Pair</option>
+                            <option value="9">Sheet</option>
+                            <option value="10">Rack</option>
+                        </select>
+
+                        <div class="form-row no-padding">
+
+                            <div class="form-element-title">
+                                <label style="color: #000">Photo</label>
+                            </div>
+
+                            <div class="form-divider"></div>
+
+                            <div class="form-row txt-center">
+                                <div class="profile-image">
+                                    <div class="profile-image-item">
+                                        <img id="CompanyProfile" src="avatar.png" width="210" height="110" />
+                                    </div>
+
+                                    <div class="form-divider-2"></div>
+                                    <input id="fileInput" type="file" style="display:none;" />
+                                    <button class="button green" onclick="document.getElementById('fileInput').click();">Select Image</button>
+                                    <button class="button red">Remove</button>
+
+                                </div>
+                            </div>
+
+                            <div class="form-divider-3"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Packing End Here -->
+
+                <div class="form-divider"></div>
+
+                <div class="form-label-divider">
+                    <span class="label-span">Measurement</span>
+                </div>
+
+                <div class="form-divider"></div>
+
+                <!-- Measurement Start Here-->
+                <div class="form-row no-padding">
+                    <div class="form-element-title">
+                        <label style="color: #000">Height (m)</label>
+                    </div>
+                    <input type="text" class="form-element" placeholder="0" required />
+                </div>
+
+                <div class="form-row no-padding">
+                    <div class="form-element-title">
+                        <label style="color: #000">Width (m)</label>
+                    </div>
+                    <input type="text" class="form-element" placeholder="20" required />
+                </div>
+
+                <div class="form-row no-padding">
+                    <div class="form-element-title">
+                        <label style="color: #000">Depth (m)</label>
+                    </div>
+                    <input type="text" class="form-element" placeholder="15" required />
+                </div>
+                <!-- Measurement End Here-->
+
+            </div>
+            <div class="popup-footer">
+                <button class="button blue" data-dismiss="true">Add Item</button>
+            </div>
+        </div>
+    </div>
+    <!--POPUP HTML CONTENT END -->
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/global.script.js"></script>
+
+
+</body>
+
+</html>

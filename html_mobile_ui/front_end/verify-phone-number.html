@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AzureUI - Term</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/global.style.css" />
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="wrapper-inline">
+            <div class="form-divider"></div>
+
+            <div class="form-row txt-center aztitle">
+                Verify your phone number
+            </div>
+
+            <div class="form-row txt-center">
+                IZYIM will send an SMS message to verify your phone number. Enter your country code and phone number: 
+            </div>
+                
+            <div class="form-divider"></div>
+
+            <!-- Here Lies Main Start Here -->
+            <main>
+                <section class="container">
+                    <form></form>
+                    <div class="form-row-group with-icons">
+
+                        <div class="form-row no-padding">
+                            <div style="position:absolute; top:10px">
+                                <a class="fa fa-flag"></a>
+                            </div>
+                            <select class="form-element">
+                                <option value="">Select your country</option>
+                                <option value="1" selected>Malaysia</option>
+                                <option value="2">China</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row no-padding">
+                            <div style="position:absolute; top:10px">
+                                <a class="fa fa-phone"></a>
+                            </div>
+                            <input id="mobile" type="text" class="form-element" placeholder="Enter your phone number" />
+                        </div>
+                    </div>
+
+                    <!-- AzFooter Start Here-->
+                    <div class="azfooter">
+                        <div class="azfmain-button">
+                            <div class="form-row txt-center">
+                                <a href="verify-code-number.html" class="button block green">NEXT</a>
+                            </div>
+                        </div>
+                        <div class="azfmain-txt">
+                            <div class="form-row txt-center">
+                                Carrier SMS charges may apply
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- AzFooter Ended Here -->
+                    
+                </section>
+            </main>
+
+        </div>
+    </div>
+
+</body>
+</html>

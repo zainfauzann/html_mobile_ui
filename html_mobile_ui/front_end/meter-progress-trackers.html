@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AzureUI - METER PROGRESS TRACKERS</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/global.style.css">
+</head>
+
+<body>
+
+    <div class="nav-menu">
+
+        <nav class="menu">
+            <!-- profile logo start -->
+            <div class="nav-header">
+                <a href="home.html"><img src="images/CIEF.png" width="160"></a>
+            </div>
+            <!-- profile logo end -->
+            <!-- Menu navigation start -->
+            <div class="nav-container">
+                <ul class="main-menu">
+                    <li>
+                        <a href="home.html"><i class="fa fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bell"></i> Notice</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-briefcase"></i> Arrangement <span class="fa fa-angle-down"></span></a>
+                        <ul>
+                            <li><a href="#" data-loader="show"><i class="fa fa-industry"></i> Warehouse Receive Note</a></li>
+                            <li><a href="#" data-loader="show"><i class="fa fa-ship"></i> Shipment Arrangement</a></li>
+                            <li><a href="#" data-loader="show"><i class="fa fa-truck"></i> Delivery Arrangement</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i> Orders <span class="fa fa-angle-down"></span></a>
+                        <ul>
+                            <li><a href="shipping-order.html" data-loader="show"><i class="fa fa-truck"></i> Shipping Order</a></li>
+                        </ul>
+                    </li>                  
+                    <li>
+                        <a href="#"><i class="fa fa-comments"></i> Messenger</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i> Track Order</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-code"></i>Example Element <span class="fa fa-angle-down"></span></a>
+                        <ul>
+                            <li><a href="element-wizard.html" data-loader="show"><i class="fa fa-code"></i> Wizard Element</a></li>
+                            <li><a href="#" data-loader="show"><i class="fa fa-code"></i> Accordion Element</a></li>
+                            <li><a href="#" data-loader="show"><i class="fa fa-code"></i> Popup Element</a></li>
+                            <li><a href="element-MTracker.html" data-loader="show"><i class="fa fa-code"></i> Meter Tracker Element</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Menu navigation end -->
+        </nav>
+    </div>
+
+    <div class="wrapper">
+        <div class="wrapper-inline">
+            <!-- Header area start -->
+            <header style="background-color: #FFF">
+                <a class="go-back-link" href="javascript:history.back();"><i class="fa fa-arrow-left"></i></a>
+                <h1 id="HT" class="page-title" style="color: #000">Track Order</h1>
+                <div class="navi-menu-button">
+                    <em></em>
+                    <em></em>
+                    <em></em>
+                </div>
+            </header>
+            <!-- Header area end -->
+            <!-- Main Content Start Here -->
+            <div class="form-fixed"></div>
+
+            <div class="meter-container">
+                <div class="form-row">
+                    <div class="meter-tracker-bar">
+                        <!-- Trackers Meter Point Start Here -->
+                        <div id="meter-bar" style="background-color:#069; width:0; height:100%"></div>
+                        <!-- Trackers Meter Point End Here -->
+                        <!-- Sub Title For Meter Point Start Here -->
+                        <label class="update-txt-first fix">
+                            <div class="update-btn-first fix">
+                                <input id="StartedStep" type="submit" onclick="StartedStep()" style="display:none" />
+                            </div>
+                            <a>Order Date</a>
+                        </label>
+                        <label class="update-txt-second fix">
+                            <div class="update-btn-second fix">
+                                <input id="FirstStep" type="submit" onclick="FirstStep()" style="display:none" />
+                            </div>
+                            <a>WH Received</a>
+                        </label>
+                        <label class="update-txt-third fix">
+                            <div class="update-btn-third fix">
+                                <input id="SecondStep" type="submit" onclick="SecondStep()" style="display:none" />
+                            </div>
+                            <a>Delivery Arr</a>
+                        </label>
+                        <label class="update-txt-fourth fix">
+                            <a>Delivery</a>
+                        </label>
+                        <label class="update-txt-fixwall fix">
+                            <div class="update-btn-fourth fix">
+                                <input id="CompletedStep" type="submit" onclick="ThirdStep()" style="display:none" />
+                            </div>
+                        </label>
+                        <!-- Sub Title For Meter Point End Here -->   
+                    </div>
+                </div>
+
+                <div id="PageOrderDate" class="AzPagination-Container" style="display:block">
+                    <div class="form-row">
+                        <div class="form-row txt-center">
+                            <a class="a-meter-title">Order Date</a>
+                        </div>
+                        <hr />
+                        <a class="a-meter-sub-title">Customer</a>
+                        <br />
+                        <a class="a-meter-text-data">Arief</a>
+                        <br />
+                        <a class="a-meter-sub-title">Supplier</a>
+                        <br />
+                        <a class="a-meter-text-data">FedEx</a>
+                        <hr />
+                        <!-- Detail Data Start Here -->
+                        <a class="a-meter-sub-title">Order No</a>
+                        <br />
+                        <a class="a-meter-text-data">HQ-001/Example</a>
+                        <br />
+                        <br />
+                        <a class="a-meter-sub-title">Order Type</a>
+                        <br />
+                        <a class="a-meter-text-data">Shipping Order</a>
+                        <br />
+                        <br />
+                        <a class="a-meter-sub-title">Date Created</a>
+                        <br />
+                        <a class="a-meter-text-data">26/04/2018</a>
+                        <br />
+                        <br />
+                        <a class="a-meter-sub-title">Purchase No</a>
+                        <br />
+                        <a class="a-meter-text-data">Example/012/ABC</a>
+                        <br />
+                        <br />
+                        <a class="a-meter-sub-title">Purchase Value</a>
+                        <br />
+                        <a class="a-meter-text-data">10.00</a>
+                        <!-- Detail Data End Here -->
+                        <hr>
+                        <div class="form-divider-2"></div>
+                        <div class="txt-center">
+                            <a href="meter-order-details.html" class="button blue" data-dismiss="true">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="PageWHReceived" class="AzPagination-Container" style="display:none">
+                    <div class="form-row">
+                        <div class="form-row txt-center">
+                            <a class="a-meter-title">Warehouse Received Note</a>
+                        </div>
+                        <hr />
+                        <a class="a-meter-sub-title">Customer</a>
+                        <br />
+                        <a class="a-meter-text-data">Arief</a>
+                        <br />
+                        <a class="a-meter-sub-title">Supplier</a>
+                        <br />
+                        <a class="a-meter-text-data">FedEx</a>
+                        <hr />
+                        <!-- Detail Data Start Here -->
+                        <a class="a-meter-sub-title">Received Date</a>
+                        <br />
+                        <a class="a-meter-text-data">22/03/2018</a>
+                        <br />
+                        <br />
+                        <a class="a-meter-sub-title">Total Carton</a>
+                        <br />
+                        <a class="a-meter-text-data">-</a>
+                        <!-- Detail Data End Here -->
+                        <hr>
+                        <div class="form-divider-2"></div>
+                        <div class="txt-center">
+                            <a class="button blue" data-dismiss="true" data-popup="AzPopActionEdit">Edit Address</a>
+                            <a href="meter-order-details.html" class="button blue" data-dismiss="true">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="PageDeliveryArr" class="AzPagination-Container" style="display:none">
+                    <div class="form-row">
+                        <div class="form-row txt-center">
+                            <a class="a-meter-title">Delivery Arrangement</a>
+                        </div>
+                        <hr />
+                        <a class="a-meter-sub-title">Customer</a>
+                        <br />
+                        <a class="a-meter-text-data">Arief</a>
+                        <br />
+                        <a class="a-meter-sub-title">Supplier</a>
+                        <br />
+                        <a class="a-meter-text-data">FedEx</a>
+                        <hr />
+                        <!-- Detail Data Start Here -->
+                        <a class="a-meter-sub-title">Contact Person</a>
+                        <br />
+                        <a class="a-meter-text-data">Harry</a>
+                        <br />
+                        <br />
+                        <a class="a-meter-sub-title">Contact Number</a>
+                        <br />
+                        <a class="a-meter-text-data">012-3851190</a>
+                        <br />
+                        <br />
+                        <a class="a-meter-sub-title">Address</a>
+                        <br />
+                        <a class="a-meter-text-data">Jalan Persiaran Apec</a>
+                        <br />
+                        <br />
+                        <a class="a-meter-sub-title">City</a>
+                        <br />
+                        <a class="a-meter-text-data">Cyberjaya</a>
+                        <br />
+                        <br />
+                        <a class="a-meter-sub-title">Postcode</a>
+                        <br />
+                        <a class="a-meter-text-data">55310</a>
+                        <br />
+                        <br />
+                        <a class="a-meter-sub-title">State</a>
+                        <br />
+                        <a class="a-meter-text-data">Selangor</a>
+                        <br />
+                        <br />
+                        <a class="a-meter-sub-title">Country</a>
+                        <br />
+                        <a class="a-meter-text-data">Malaysia</a>
+                        <!-- Detail Data End Here -->
+                        <hr>
+                        <a class="a-meter-sub-title">Lorry Driver</a>
+                        <br />
+                        <a class="a-meter-text-data" style="color:red">Pending</a>
+                        <br />
+                        <br />
+                        <a class="a-meter-sub-title">Lorry Number</a>
+                        <br />
+                        <a class="a-meter-text-data" style="color:red">Pending</a>
+                        <br />
+                        <br />
+                        <a class="a-meter-sub-title">Appointment Date</a>
+                        <br />
+                        <a class="a-meter-text-data">dd/mm/yyyy</a>
+                        <br />
+                        <div class="form-row txt-center">
+                            <button class="button green" data-dismiss="true">Yes</button>
+                            <button class="button red" data-dismiss="true" data-popup="AzPopActionApp">No</button>
+                        </div>
+                        <hr>
+                        <div class="form-divider-2"></div>
+                        <div class="txt-center">
+                            <a href="meter-order-details.html" class="button blue" data-dismiss="true">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="PageDelivery" class="AzPagination-Container" style="display:none">
+                    <div class="form-row">
+                        <div class="form-row txt-center">
+                            <a class="a-meter-title">Do you receive your goods in good condition?</a>
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="form-row txt-center">
+                                <label><input type="radio" name="gender" /> Yes</label>
+                                <label><input type="radio" name="gender" /> No</label>
+                            </div>
+                        </div>
+                        <div class="form-row-rate txt-center">
+                                <a class="a-meter-title">
+                                        <fieldset class="form-row-rate rating" style="z-index:2">
+                                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                            </fieldset>
+                                </a>
+                                
+                        </div>
+                        <hr>
+                        <div class="form-row txt-center">
+                            <a class="a-meter-title">Send us a feedback</a>
+                            <textarea rows="4" cols="50" class="form-element" placeholder="Comment here" required ></textarea>
+                        </div>
+                        <!-- Detail Data Start Here -->                 
+                        <!-- Detail Data End Here -->
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Main Content End Here -->
+        </div>
+    </div>
+
+    <!--POPUP HTML CONTENT START -->
+    <div class="popup-overlay" id="AzPopActionEdit">
+        <!-- if you dont want overlay add class .no-overlay -->
+        <div class="popup-container">
+            <div class="popup-header">
+                <h3 class="popup-title">Warehouse Details</h3>
+                <span class="popup-close" data-dismiss="true"><i class="fa fa-times"></i></span>
+            </div>
+            <div class="popup-content">
+                <div class="form-row-group with-icons-no-padding">
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Warehouse Name</label>
+                        </div>
+                        <input type="text" class="form-element" placeholder="FedEx" required />
+                    </div>
+
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Warehouse Address</label>
+                        </div>
+                        <input type="text" class="form-element" placeholder="Jalan Persiaran Apec" required />
+                    </div>
+
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Warehouse City</label>
+                        </div>
+                        <input type="text" class="form-element" placeholder="Cyberjaya" required />
+                    </div>
+
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Warehouse Postcode</label>
+                        </div>
+                        <input type="text" class="form-element" placeholder="63000" required />
+                    </div>
+
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Warehouse State</label>
+                        </div>
+                        <input type="text" class="form-element" placeholder="Selangor" required />
+                    </div>
+
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Warehouse Country</label>
+                        </div>
+                        <input type="text" class="form-element" placeholder="Malaysia" required />
+                    </div>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <div class="form-row txt-center">
+                    <button class="button blue" data-dismiss="true">Edit Warehouse Address</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--POPUP HTML CONTENT END -->
+    <!--POPUP HTML CONTENT START -->
+    <div class="popup-overlay" id="AzPopActionApp">
+        <!-- if you dont want overlay add class .no-overlay -->
+        <div class="popup-container">
+            <div class="popup-header">
+                <h3 class="popup-title">Change Appointment Date</h3>
+                <span class="popup-close" data-dismiss="true"><i class="fa fa-times"></i></span>
+            </div>
+            <div class="popup-content">
+                <div class="form-row-group with-icons-no-padding">
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Appointment Date</label>
+                        </div>
+                        <input type="text" class="form-element" placeholder="dd/mm/yyyy" required />
+                    </div>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <div class="form-row txt-center">
+                    <button class="button blue" data-dismiss="true">submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--POPUP HTML CONTENT END -->
+
+    <!-- Required For All Pages, Otherwise Ugly Others Function Won't Work -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/global.script.js"></script>
+    <!-- Required For All Pages, Otherwise Ugly Others Function Won't Work -->
+
+    <script>
+        //Az Global Var For Page//
+        var AzPage1 = document.getElementById("PageOrderDate"), 
+        AzPage2 = document.getElementById("PageWHReceived"), 
+        AzPage3 = document.getElementById("PageDeliveryArr"), 
+        AzPage4 = document.getElementById("PageDelivery");
+        function StartedStep() {
+            var elem = document.getElementById("meter-bar");
+            var width = 0;
+            var id = setInterval(frame, 0);
+            function frame() {
+                if (width >= 0.1) {
+                    clearInterval(id);
+                    AzPage1.style.display = "block";
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    AzPage2.style.display = "none";
+                    AzPage3.style.display = "none";
+                    AzPage4.style.display = "none";
+                }
+            }
+        }
+        function FirstStep() {
+            var elem = document.getElementById("meter-bar");
+            var width = 0;
+            var id = setInterval(frame, 0);
+            function frame() {
+                if (width >= 25) {
+                    clearInterval(id);
+                    AzPage2.style.display = "block"
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    AzPage1.style.display = "none";
+                    AzPage3.style.display = "none";
+                    AzPage4.style.display = "none";
+                }
+            }
+        }
+        function SecondStep() {
+            var elem = document.getElementById("meter-bar");
+            var width = 25;
+            var id = setInterval(frame, 0);
+            function frame() {
+                if (width >= 50) {
+                    clearInterval(id);
+                    AzPage3.style.display = "block"
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    AzPage1.style.display = "none";
+                    AzPage2.style.display = "none";
+                    AzPage4.style.display = "none";
+                }
+            }
+        }
+        function ThirdStep() {
+            var elem = document.getElementById("meter-bar");
+            var width = 50;
+            var id = setInterval(frame, 0);
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                    AzPage4.style.display = "block"
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    AzPage1.style.display = "none";
+                    AzPage2.style.display = "none";
+                    AzPage3.style.display = "none";
+                }
+            }
+        }
+        function CompletedStep() {
+            var elem = document.getElementById("meter-bar");
+            var width = 75;
+            var id = setInterval(frame, 0);
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

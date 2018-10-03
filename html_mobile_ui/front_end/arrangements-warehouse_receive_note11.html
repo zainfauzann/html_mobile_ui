@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AzureUI - VIEW RECEIVE NOTE1</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/global.style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="wrapper-inline">
+            <!-- Header area start -->
+            <header style="background-color: #FFF">
+                <a class="go-back-link" href="javascript:history.back();" a><i class="fa fa-arrow-left"></i></a>
+                <h1 id="HT" class="page-title" style="color: #000">Warehouse Receive Note</h1>
+            </header>
+            <!-- Header area end -->
+            <!-- Page content start -->
+            <main class="fix-top-menu">
+                <section class="container">
+                    <form>
+                        <div class="form-divider"></div>
+						<!-- Warehouse Receive Note start -->
+                        <div class="form-label-divider">
+                            <span class="label-span">Warehouse Receive Note Form</span>
+                        </div>
+                        <div class="form-divider"></div>
+                        <div class="form-row-group with-icons-no-padding">
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Order Number</label>
+                                </div>
+                                <select class="form-element">
+                                    <option value="">Please select your Order Number</option>
+                                    <option value="00001">1</option>
+                                    <option value="00002">2</option>
+                                    <option value="00003">3</option>
+                                </select>
+                            </div>
+        
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Warehouse</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Port Klang" disabled required />
+                            </div>
+        
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Receive Date</label>
+                                </div>
+                                <input type="date" class="form-element" placeholder="dd/mm/yyyy" required />
+                            </div>
+        
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Warehouse Receive Note Number</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="00001" required />
+                            </div>
+        
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Consignment Note Number</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="ABC/1234/123" required />
+                            </div>
+        
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Transport Company Name</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="SF Express" required />
+                            </div>
+             
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Receiving Person</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="John" required />
+                            </div>  						
+                        </div>
+                        <!-- Warehouse Receive Note end -->
+                         <!-- Warehouse Receive Note Details Start Here-->
+                <div class="form-divider"></div>
+
+                <div class="form-label-divider">
+                    <span class="label-span">Warehouse Receive Note Details</span>
+                </div>
+
+                <div class="form-divider"></div>
+
+                <div class="form-row-group with-icons-no-padding">
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Marking Number</label>
+                        </div>
+                        <input type="text" class="form-element" placeholder="1/00002"  required />
+                    </div>
+                        
+                    <div class="form-row no-padding">
+                        <div class="form-element-title">
+                            <label style="color: #000">Photo</label>
+                        </div>
+                        <div class="form-divider"></div>
+                        <div class="form-row txt-center">
+                            <div class="profile-image">
+                                <div class="profile-image-item">
+                                    <img id="CompanyProfile" src="avatar.png" width="210" height="110" />
+                                </div>
+                                <div class="form-divider-2"></div>
+                                <input id="fileInput" type="file" style="display:none;" />
+                                <button class="button green" onclick="document.getElementById('fileInput').click();">Select Image</button>
+                                <button class="button red">Remove</button>
+                            </div>
+                        </div>
+                        <div class="form-divider-3"></div>
+                        <div class="form-divider"></div>
+                    </div>
+                </div>
+                <!-- Warehouse Receive Note Details End Here-->
+                        <div class="form-divider"></div>
+                        <div class="form-row txt-right">                           
+                            <a href="arrangements-warehouse_receive_note1.1.html"><span  class="button blue">Next</span></a>
+                        </div>
+                        <div class="form-divider"></div>
+                        
+                    </form>
+                </section>
+            </main>
+            <!-- Page content end -->
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/global.script.js"></script>
+
+
+</body>
+
+</html>

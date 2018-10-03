@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AzureUI - CREATE SHIPPING ORDER STEP 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/global.style.css">
+</head>
+
+<body>
+
+    <div class="nav-menu">
+
+        <nav class="menu">
+            <!-- profile logo start -->
+            <div class="nav-header">
+                <a href="home.html"><img src="images/CIEF.png" width="160"></a>
+            </div>
+            <!-- profile logo end -->
+            <!-- Menu navigation start -->
+            <div class="nav-container">
+                <ul class="main-menu">
+                    <li>
+                        <a href="home.html"><i class="fa fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bell"></i> Notice</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-briefcase"></i> Arrangement <span class="fa fa-angle-down"></span></a>
+                        <ul>
+                            <li><a href="arrangements-warehouse_receive_note1.html" data-loader="show"><i class="fa fa-industry"></i> Warehouse Receive Note</a></li>
+                            <li><a href="arrangements-shipment_arrangements1.html" data-loader="show"><i class="fa fa-ship"></i> Shipment Arrangement</a></li>
+                            <li><a href="arrangements-delivery_arrangements1.html" data-loader="show"><i class="fa fa-truck"></i> Delivery Arrangement</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i> Orders <span class="fa fa-angle-down"></span></a>
+                        <ul>
+                            <li><a href="shipping-order.html" data-loader="show"><i class="fa fa-truck"></i> Shipping Order</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-comments"></i> Messenger</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i> Track Order</a>
+                    </li>
+                    <li>
+                        <a href="example-element.html"><i class="fa fa-code"></i>Example Element <span class="fa fa-angle-down"></span></a>
+                        <ul>
+                            <li><a href="element-wizard.html" data-loader="show"><i class="fa fa-code"></i> Wizard Element</a></li>
+                            <li><a href="#" data-loader="show"><i class="fa fa-code"></i> Accordion Element</a></li>
+                            <li><a href="#" data-loader="show"><i class="fa fa-code"></i> Popup Element</a></li>
+                            <li><a href="element-MTracker.html" data-loader="show"><i class="fa fa-code"></i> Meter Tracker Element</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Menu navigation end -->
+
+        </nav>
+
+    </div>
+
+    <div class="wrapper">
+        <div class="wrapper-inline">
+            <!-- Header area start -->
+            <header style="background-color: #FFF">
+                <a class="go-back-link" href="javascript:history.back();"><i class="fa fa-arrow-left"></i></a>
+                <h1 id="HT" class="page-title" style="color: #000">Create Shipping Order</h1>
+                <div class="navi-menu-button">
+                    <em></em>
+                    <em></em>
+                    <em></em>
+                </div>
+            </header>
+            <!-- Header area end -->
+            <!-- Page content start -->
+            <main class="fix-top-menu">
+                <section class="container">
+                    <form>
+                        <!-- Order Detail Start Here -->
+                        <div class="form-divider"></div>
+
+                        <div class="form-label-divider">
+                            <span class="label-span">Order Detail</span>
+                        </div>
+
+                        <div class="form-divider"></div>
+
+                        <div class="form-row-group">
+                            <div class="form-row no-padding">
+                                <input id="ff" type="text" class="form-element" placeholder="Select your frieght forwarder" onclick="myFunction()" data-popup="formPopup" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-name" type="text" class="form-element" placeholder="Supplier Company Name" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-address" type="text" class="form-element" placeholder="Supplier Contact Person" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-city" type="text" class="form-element" placeholder="Supplier Contact Person No" required />
+                            </div>
+                        </div>
+                        <!-- Order Detail End Here -->
+                        <!-- Delivery Detail Start Here -->
+                        <div class="form-divider"></div>
+
+                        <div class="form-label-divider">
+                            <span class="label-span">Delivery Details</span>
+                        </div>
+
+                        <div class="form-divider"></div>
+
+                        <div class="form-row-group">
+                            <div class="form-row no-padding">
+                                <select class="form-element">
+                                    <option value="">please choose delivery</option>
+                                    <option value="1">Branch 1</option>
+                                    <option value="2">Branch 2</option>
+                                </select>
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-name" type="text" class="form-element" placeholder="Delivery Name" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-address" type="text" class="form-element" placeholder="Delivery Address" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-city" type="text" class="form-element" placeholder="Delivery City" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-name" type="text" class="form-element" placeholder="Delivery Postcode" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-address" type="text" class="form-element" placeholder="Delivery State" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-city" type="text" class="form-element" placeholder="Delivery Country" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-address" type="text" class="form-element" placeholder="Delivery Contact Person" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-city" type="text" class="form-element" placeholder="Delivery Contact Number" required />
+                            </div>
+                        </div>
+                        <!-- Delivery Detail End Here -->
+                        <!-- Warehouse Detail Start Here -->
+                        <div class="form-divider"></div>
+
+                        <div class="form-label-divider">
+                            <span class="label-span">Warehouse Detail</span>
+                        </div>
+
+                        <div class="form-divider"></div>
+
+                        <div class="form-row-group">
+                            <div class="form-row no-padding">
+                                <select class="form-element">
+                                    <option value="">Please choose warehouse</option>
+                                    <option value="1">KFC</option>
+                                    <option value="2">Surgar Bun</option>
+                                </select>
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-name" type="text" class="form-element" placeholder="Warehouse Name" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-address" type="text" class="form-element" placeholder="Warehouse Address" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-city" type="text" class="form-element" placeholder="Warehouse City" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-name" type="text" class="form-element" placeholder="Warehouse Zip" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-address" type="text" class="form-element" placeholder="Warehouse State" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-city" type="text" class="form-element" placeholder="Warehouse Country" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-address" type="text" class="form-element" placeholder="Warehouse Contact Person" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <input id="branch-city" type="text" class="form-element" placeholder="Warehouse Contact Number" required />
+                            </div>
+                        </div>
+
+                        <div class="form-divider"></div>
+                        <!-- Warehouse Detail End Here -->
+
+                        <div class="form-row">
+                            <a href="create-shipping-order-S2.html" class="button block green">Continue</a>
+                        </div>
+
+                    </form>
+                </section>
+
+
+            </main>
+            <!-- Page content end -->
+        </div>
+    </div>
+
+    <!--POPUP HTML CONTENT START -->
+    <div class="popup-overlay" id="formPopup">
+        <!-- if you dont want overlay add class .no-overlay -->
+        <div class="popup-container">
+            <div class="popup-header">
+                <h3 class="popup-title">Contact List</h3>
+                <span class="popup-close" data-dismiss="true"><i class="fa fa-times"></i></span>
+            </div>
+            <div class="popup-content">
+                <div class="list-box" style="position: inherit; margin-left:0">
+                    <!-- Content List Spawner Start Here-->
+                    <div class="form-row txt-center">
+                        <a>Choose the forwarder</a>
+                    </div>
+                    <div class="form-divider"></div>
+                    <div id="content">
+                        <a id="active" href="#" class="list-item" data-dismiss="true">
+                            <i class="fa fa-user" style="color: green"></i>
+                            <em class="seperate-contact"></em>
+                            <span class="list-item-title-contact">Bryan</span>
+                            <br />
+                            <span class="list-item-title-contact" style="margin-top:-13px">Forwarder</span>
+                        </a>
+                        <a href="#" class="list-item" data-dismiss="true">
+                            <i class="fa fa-user" style="color: red"></i>
+                            <em class="seperate-contact"></em>
+                            <span class="list-item-title-contact">Dylan</span>
+                            <br />
+                            <span class="list-item-title-contact" style="margin-top:-13px">Forwarder</span>
+                        </a>
+                        <a href="#" class="list-item" data-dismiss="true">
+                            <i class="fa fa-user" style="color: green"></i>
+                            <em class="seperate-contact"></em>
+                            <span class="list-item-title-contact">Edmund</span>
+                            <br />
+                            <span class="list-item-title-contact" style="margin-top:-13px">Forwarder</span>
+                        </a>
+                    </div>
+                    <!-- Content List Spawner End Here-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--POPUP HTML CONTENT END -->
+    <!-- Required For All Pages, Otherwise Ugly Others Function Won't Work -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/global.script.js"></script>
+
+    <script type="text/javascript">
+        document.getElementById("active").onclick = function () {
+            document.getElementById("ff").textContent = "Profile";
+        };
+    </script>
+
+</body>
+
+</html>

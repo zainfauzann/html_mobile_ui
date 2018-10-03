@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AzureUI - Term</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/global.style.css" />
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="wrapper-inline">
+            <div class="form-divider"></div>
+
+            <div class="form-row txt-center aztitle">
+                Personal Profile Info
+            </div>
+
+            <div class="form-row txt-center">
+                Please provide your personal info and optional profile photo.
+            </div>
+
+            <!-- Here Lies Main Start Here -->
+            <main style="margin-top: 0;">
+                <section class="container">
+                    <form>
+
+                        <div class="form-row txt-center">
+                            <div class="profile-image">
+                                <div class="profile-image-com">
+                                    <img id="CompanyProfile" class="avatar-img" src="images/Screenshot (9).png" width="80" height="80" />
+                                    <label class="update-btn fix">
+                                        <input id="CompanyUpload" type="file" style="display:none" />
+                                        <i class="fa fa-camera"></i>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-divider"></div>
+
+                        <div class="form-row-group with-icons-no-padding">
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Role</label>
+                                </div>
+                                <select class="form-element">
+                                    <option value="">Please select your role</option>
+                                    <option value="1">Freight Forwarder</option>
+                                    <option value="2">Importer</option>
+                                </select>
+                            </div>
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">First Name</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Fedrick Darel" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Last Name</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="Auditore" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">E-Mail</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="fedrickdarel@gmail.com" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Website</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="http://www.Azure.com" required />
+                            </div>
+                            <div class="form-row no-padding">
+                                <div class="form-element-title">
+                                    <label style="color: #000">Position</label>
+                                </div>
+                                <input type="text" class="form-element" placeholder="CEO" required />
+                            </div>
+                        </div>
+
+                        <div class="form-divider"></div>
+
+                        <div class="form-row txt-center">
+                            <a href="index.html" class="button block green">FINISH</a>
+                        </div>
+
+                        <div class="form-divider"></div>
+
+                    </form>
+                </section>
+            </main>
+
+        </div>
+    </div>
+
+    <!-- Require For All Pages -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/global.script.js"></script>
+    <!-- Require For All Pages -->
+
+</body>
+</html>
